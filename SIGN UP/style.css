@@ -1,0 +1,297 @@
+body{
+    background-image: linear-gradient(to bottom right, #034ff3, #68cfff, white);
+    background-size: 700% 200%;
+    margin: 0;
+    padding: 0;
+    font-size: 8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    min-width: 430px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: slideIn 4s ease infinite;
+}
+
+@keyframes slideIn {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.box{
+    position: relative;
+    width: 90%;
+    height: auto;
+
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.288);
+
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left,
+.right{
+    width: 45%;
+    height: auto;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.left{
+    width: 47%;
+    background-color: #7ad5ff;
+    height: 660px;
+    border-radius: 30px;
+
+    background-image: url(../IMAGE/student_on\ chair.svg);
+    background-position: center;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    animation: slideIn 4s ease infinite;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img{
+    width: 80%;
+}
+
+
+.right{
+    position: relative;
+}
+
+
+.comp{
+    position: relative;
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .7s;
+}
+
+.comp img{
+    height: 100%;
+}
+
+.comp a{
+    text-decoration: none;
+    width: 100%;
+}
+
+.comp h1{
+    width: 100%;
+
+    font-size: 27pt;
+    background-image: linear-gradient(to bottom right, #034ff3, #68cfff);
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 0px;
+    margin-top: 17px;
+
+    text-align: left;
+
+    animation: slideIn 4s ease infinite;
+}
+
+.right h2{
+    width: 87%;
+    font-size: 28pt;
+    color: #181717;
+    font-weight: 600;
+    line-height: 1.1;
+
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+
+form{
+    position: relative;
+    height: 40%;
+    width: 87%;
+
+    margin-top: 10px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.mini-box{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+}
+
+h4{
+    width: auto;
+    text-align: left;
+    margin: 0px 4px 0px 0px;
+    font-weight: 600;
+    font-size: 12pt;
+
+    background-image: linear-gradient(to bottom right, #034ff3, #68cfff);
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select[name="state"],
+input[type="radio"],
+select[name="university"]{
+    width: 96%;
+    height: 37px;
+    border-radius: 10px;
+    border: solid 1.2px #034ff3;
+    background-color: transparent;
+
+    font-family: Square721 BT;
+    font-size: 12pt;
+    transition: 0.5s;
+    color: #181717;
+
+    padding-left: 4%;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+}
+
+select[name="state"],
+select[name="university"]{
+   width: 100%;
+}
+
+.gender{
+    height: 37px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1.2px #034ff3;
+
+    font-family: Square721 BT;
+    font-size: 12pt;
+    transition: 0.5s;
+    color: white;
+    font-weight: 400;
+
+    margin-bottom: 0px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+input[type="radio"]{
+    width: auto;
+    height: 30px;
+    transition: 0.5s;
+
+    margin-left: 10px;
+}
+
+button{
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    background-color: #034ff3d7;
+
+    border: none;
+
+    font-size: 12pt;
+    color: white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    font-size: 13pt;
+    border-radius: 10px;
+    background-color: #034ff398;
+    font-weight: 500;
+
+    transition: .4s;
+    
+}
+
+
+.right h3{
+    background-color: #ffffff;
+    width: 90%;
+    padding: 3% 5%;
+    border-radius: 17px;
+
+    color: black;
+    font-size: 10pt;
+    /* line-height: 20px; */
+
+    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.288); */
+}
+
+.right h3 a{
+    text-decoration: underline;
+    color: #eba626;
+    border-radius: 5px;
+
+    transition: 0.5s;
+}
+
+.right h3 a:hover{
+    color: #cc8d17;
+
+}
